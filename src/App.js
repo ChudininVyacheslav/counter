@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from './toolkitRedux/toolkitReducer';
+import { decrement, increment } from './toolkitReducer';
 
 function App() {
   const count = useSelector(state => state.toolkit.count)
@@ -14,6 +14,6 @@ function App() {
       <button onClick={() => dispatch(decrement())}>Уменьшить</button>
     </div>
   );
-}
+};
 
 export default App;
