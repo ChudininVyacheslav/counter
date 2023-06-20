@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from './toolkitReducer';
 
 function App() {
-  const count = useSelector(state => state.toolkit.count)
+  const count = useSelector(state => state.toolkit.count);
   const dispatch = useDispatch();
 
   return (
